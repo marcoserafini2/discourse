@@ -10,7 +10,7 @@ export default Controller.extend(CanCheckEmails, {
   model: null,
   query: null,
   order: null,
-  ascending: null,
+  asc: null,
   showEmails: false,
   refreshing: false,
   listFilter: null,
@@ -53,7 +53,7 @@ export default Controller.extend(CanCheckEmails, {
       filter: this.listFilter,
       show_emails: this.showEmails,
       order: this.order,
-      ascending: this.ascending,
+      asc: this.asc,
       page: this._page
     })
       .then(result => {
